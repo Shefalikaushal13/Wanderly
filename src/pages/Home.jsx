@@ -1,44 +1,52 @@
 import React from 'react';
-import HeroBannerImage from '../assets/banner.png';
-import Button from '../components/Button';
+import HeroBannerImage from '../assets/bannerimage.jpeg';
+import Button from '../components/ui/ButtonPersonalised';
+import TextAnimator from './../utils/TextAnimator';
 
 const Home = () => {
+
   return (
-    <div className="relative p-5 mt-[30px] sm:ml-[20px] lg:mt-[100px] flex flex-col lg:flex-row">
+    <div className="relative p-2 mt-[30px] sm:ml-[20px] lg:mt-[100px] flex flex-col lg:flex-row h-full">
       <div className="flex-1 relative">
-        <div className="font-semibold text-2xl">
-          <p>¡Hola! Fitness Freaks</p>
+        <div className="font-semibold text-2xl ml-4 -mt-8">
+          <TextAnimator/>
         </div>
 
-        <div className="font-bold mt-7 mb-6 text-[40px] lg:text-[44px]">
-          <p className='text-blue-400 pt-6'>Target, Tone </p> 
-          <p className='text-blue-400 pt-9'>and Transform</p>
+        <div className="font-bold mt-7 mb-6 text-[40px] lg:text-[44px] ml-4">
+          <p className='text-orange-600 pt-6'>Discover, Experience </p> 
+          <p className='text-orange-600 pt-9'>and Inspire</p>
         </div>
 
-        <div className="text-lg leading-[35px] mb-4">
+        <div className="text-lg leading-[35px] mb-4 ml-4">
           <p className='pt-6'>
-            Welcome to SwoleMate, where every workout is an adventure <br/>
-            Choose your workout type, target muscle group, and ultimate fitness goal,<br/>
-            and we'll whip up a fresh, exciting routine for you.</p>
+            Welcome to Wanderly, your one-stop shop<br/>
+            for crafting unforgettable adventures. <br/>
+            We'll turn your travel dreams into reality, one itinerary at a time.<br/></p>
 
-          <p className='pt-5'>Say goodbye to boring exercises and hello to fun,<br/> dynamic workouts that keep you pumped.<br/>
-            Let’s make fitness a blast and crush those goals together!
+          <p className='pt-8'>Wanderly is your personal travel planner, <br/>
+          turning your dream vacations into reality.<br/>
+          With just a few clicks, you can create custom itineraries <br/>
+          tailored to your interests, budget, and travel style.<br/>
+          From exploring bustling cities to relaxing on pristine beaches,<br/>
+          Wanderly has you covered.<br/>
+          Let us handle the planning, so you can focus on the adventure!<br/>
           </p>
         </div>
         
-        <div className='mt-10'>
-          <Button func={() => window.location.href = '#hero'} text={"Let's Go!!!"} />
+        <div className='mt-10 ml-4'>
+          <Button func={() => window.location.href = '/trip-generator'} text={"Get Started for Free!"} />
         </div>
 
-        <div className="font-bold text-blue-400 opacity-10 hidden lg:block text-[200px] absolute left-0 lg:bottom-[50px]">
-          {/* Hidden on small and medium screens */}
-          <p className="hidden sm:block md:block">Exercise</p>
+        <div className="font-bold text-orange-600 opacity-10 hidden lg:block text-[200px] absolute left-[320px] lg:bottom-[80px]">
+          {/* Moved up by increasing the bottom property */}
+          <p className="hidden sm:block md:block mb-8">Travel</p>
         </div>
+
       </div>
 
       <div className="flex-1 lg:flex lg:justify-end lg:items-end lg:ml-10 relative hidden lg:block">
         {/* Hidden on small and medium screens */}
-        <img src={HeroBannerImage} alt="banner" className="hero-banner-img lg:mr-4 lg:mt-[-80px]" />
+        <img src={HeroBannerImage} alt="banner" className="hero-banner-img lg:mr-4 lg:mt-[-100px]" />
       </div>
     </div>
   );
