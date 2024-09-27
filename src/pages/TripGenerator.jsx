@@ -20,9 +20,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../utils/firebaseConfig';
 import { useNavigate, useNavigation } from 'react-router-dom';
 import '../index.css';
- 
-
-
+import { ImSpinner8 } from "react-icons/im";
 
 
 function Header(props) {
@@ -44,7 +42,7 @@ export default function Generator(props) {
 
   const[openDialog, setOpenDialog]=useState(false);
 
-  const[loading,setLoading]=useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const navigate=useNavigate();
 
@@ -62,7 +60,7 @@ export default function Generator(props) {
   const signup=useGoogleLogin({
     onSuccess:(codeResp)=>getUserProfile(codeResp),
     onError:(error)=>console.log(error)
-  })
+  });
 
   const OnGenerateTrip=async()=>{
 
@@ -77,8 +75,8 @@ export default function Generator(props) {
       toast.error('Please fill all the fields')
       return;
     }
+    setIsLoading(true);
 
-    setLoading(true);
     const FINAL_PROMPT=AI_prompt
     .replace('{location}',formData?.location?.label)
     .replace('{totalDays}',formData?.noOfDays)
@@ -91,11 +89,9 @@ export default function Generator(props) {
 
     console.log("--",result?.response?.text());
     saveAITrip(result?.response?.text());
-    setLoading(false);
   };
 
   const saveAITrip=async(tripData)=>{
-    setLoading(true);
     const user= JSON.parse(localStorage.getItem('user'));
     const docID=Date.now().toString();
 
@@ -106,13 +102,14 @@ export default function Generator(props) {
         userEmail:user?.email,
         id:docID
       });
-    setLoading(false);
     navigate('/view-trip/' + docID);
     console.log("Trip ID:", docID);
     console.log("User Choice:", formData);
     console.log("Email ID:", user?.email);
   } catch(error){
     console.log('Error saving trip:', error);
+    } finally{
+      setIsLoading(false);
     }
   };
 
@@ -127,8 +124,8 @@ export default function Generator(props) {
       localStorage.setItem('user',JSON.stringify(resp.data));
       setOpenDialog(false);
       OnGenerateTrip();
-    })
-  }
+    });
+  };
 
 
   return (
@@ -187,8 +184,13 @@ export default function Generator(props) {
 
       <Button
        func={OnGenerateTrip}
-       text={'Generate Trip'}
-       ></Button>
+       text={"Generate Trip"}
+       disabled={isLoading}
+       />
+
+      <div className={`flex justify-center items-center ${isLoading ? 'visible' : 'invisible'}`}>
+        <ImSpinner8 className="animate-spin text-orange-500 text-4xl" />
+      </div>
       
       <Dialog open={openDialog} className='bg-slate-950'>
         <DialogContent>
