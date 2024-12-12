@@ -2,9 +2,13 @@ Wanderly
 My first full-stack web development project, Wanderly. This project, built with React.js, Tailwind CSS, Firebase, Gemini AI API and other Google APIs, offers:
 
 📍Personalized travel itineraries based on user preferences, such as budget, interests, trip duration etc.
+
 📍Hotel Recommendations for each place based on the user’s budget.
+
 📍Google Maps integration: by clicking on the hotel and places to visit card, users may access contact details, more photographs, directions to the location, and links to pertinent websites.
+
 📍Saved trips: When logged in, users can see the trips they created using Wanderly.
+
 📍Realistic pictures of the corresponding places.
 
 Due to paid features, it has become unavailable after a while.
