@@ -12,7 +12,6 @@ Due to paid features, it has become unavailable after a while.
 I put everything I had into this project, and I'm really happy with how it turned out🫶.  I'd love to hear your thoughts and feedback. Do get in touch with me if you encounter any bugs or problems.
 
 ![Screenshot 2024-11-26 221640](https://github.com/user-attachments/assets/6530b224-ba2b-4c42-90b4-1be79aa1dca5)
-![Screenshot 2024-11-26 221640](https://github.com/user-attachments/assets/85f72282-f322-45be-9f64-882e0745ed4a)
 ![Screenshot 2024-11-26 221651](https://github.com/user-attachments/assets/6c2a59c0-167a-434e-b5fc-22d981a46b1c)
 ![Screenshot 2024-11-26 221703](https://github.com/user-attachments/assets/cd8be3e8-a711-4899-b840-4638a38ea47b)
 ![Screenshot 2024-11-26 221728](https://github.com/user-attachments/assets/5896b351-f60e-4fc8-8b7b-778cd0059d7a)
