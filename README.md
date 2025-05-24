@@ -11,7 +11,7 @@ My first full-stack web development project, Wanderly. This project, built with 
 
 📍Realistic pictures of the corresponding places.
 
-Due to paid features, it has become unavailable after a while.
+Due to expiration of paid features, it's unavailable but DO CHECK OUT THE DEMO VIDEO BELOW..
 
 I put everything I had into this project, and I'm really happy with how it turned out🫶.  I'd love to hear your thoughts and feedback. Do get in touch with me if you encounter any bugs or problems.
 
