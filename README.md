@@ -1,25 +1,69 @@
-Wanderly
-My first full-stack web development project, Wanderly. This project, built with React.js, Tailwind CSS, Firebase, Gemini AI API and other Google APIs, offers:
+# ✈️ Wanderly
 
-📍Personalized travel itineraries based on user preferences, such as budget, interests, trip duration etc.
+**Wanderly** is a full-stack travel planning web application that simplifies the way users plan trips. It collects preferences such as location, budget, number of people, and trip duration, and returns AI-generated itineraries with multiple hotel options — helping users get personalized travel suggestions within seconds.
 
-📍Hotel Recommendations for each place based on the user’s budget.
+---
 
-📍Google Maps integration: by clicking on the hotel and places to visit card, users may access contact details, more photographs, directions to the location, and links to pertinent websites.
+## 🧠 What It Does
 
-📍Saved trips: When logged in, users can see the trips they created using Wanderly.
+- Accepts **user inputs**: location, number of days, number of people, and budget.
+- Sends this data to a backend hosted on **Firebase Firestore**.
+- Uses **Gemini AI API** to dynamically generate personalized itineraries based on the user's input.
+- Integrates **Google Maps & Places API** to fetch details like hotel names, photos, map locations, and relevant external links.
+- Displays the **travel plans**, including hotel suggestions, day-wise itinerary, and destination highlights.
+- Allows users to view and manage all their past trips in one place.
+- Implements **route-based navigation** to view individual trips.
+- Renders a fully responsive user interface for a seamless experience across devices.
+- 
+---
 
-📍Realistic pictures of the corresponding places.
+## 🚀 Tech Stack
 
-Due to expiration of paid features, it's unavailable but DO CHECK OUT THE DEMO VIDEO BELOW..
+| Layer        | Technology                              |
+|--------------|------------------------------------------|
+| Frontend     | React.js, Tailwind CSS                   |
+| State Mgmt   | React Hooks, useState, useEffect         |
+| Backend      | Firebase Firestore                       |
+| AI API       | Gemini AI API (for itinerary generation) |
+| Maps API     | Google Maps & Places API (for hotel info)|
+| Routing      | React Router DOM                         |
+| Deployment   | Vercel                                   |
 
-I put everything I had into this project, and I'm really happy with how it turned out🫶.  I'd love to hear your thoughts and feedback. Do get in touch with me if you encounter any bugs or problems.
+---
 
 
+
+## 🧪 How It Works
+
+1. **User Input**  
+   The user enters:
+   - Destination  
+   - Budget  
+   - Number of days  
+   - Number of people
+
+2. **Data Storage**  
+   - Inputs are saved to **Firebase Firestore**  
+   - Passed to the backend to drive itinerary and hotel recommendation logic  
+
+3. **AI Itinerary Generation**  
+   - A structured prompt is sent to **Gemini AI API**  
+   - Returns a detailed **day-by-day travel itinerary**
+
+4. **Hotel & Location Insights**  
+   - **Google Maps & Places API** fetch:
+     - Nearby hotels
+     - Photos
+     - Ratings
+     - Location on map
+     - Website/booking links
+
+
+---
+
+## 📸 Screenshots and Demo Video
 
 https://github.com/user-attachments/assets/27732321-9070-4d9f-be9e-d2cbfbef80a3
-
-
 
 ![Screenshot 2024-11-26 221640](https://github.com/user-attachments/assets/6530b224-ba2b-4c42-90b4-1be79aa1dca5)
 ![Screenshot 2024-11-26 221651](https://github.com/user-attachments/assets/6c2a59c0-167a-434e-b5fc-22d981a46b1c)
@@ -32,3 +76,23 @@ https://github.com/user-attachments/assets/27732321-9070-4d9f-be9e-d2cbfbef80a3
 ![Screenshot 2024-11-26 222018](https://github.com/user-attachments/assets/1289a78e-848d-4b38-84bb-745b74ef8112)
 ![Screenshot 2024-11-26 222042](https://github.com/user-attachments/assets/9f42298d-a7f8-4dd6-8c5b-10a93ce57bb7)
 ![Screenshot 2024-11-26 222114](https://github.com/user-attachments/assets/d19d9b3b-a7c0-43ed-8be1-32e80fb431c1)
+
+
+
+---
+
+## 🌐 Demo
+
+- **Live App:** [Visit Wanderly](https://wanderly-itinerary-generator.vercel.app/)  
+  > ⚠️ *Note: The deployed site may not be fully functional due to expiration of certain paid features. (e.g., Firebase, Gemini AI, or Google Maps quotas). For a complete experience, do check out the demo video in the screenshots and demo video section above.*
+
+---
+
+## ✍️ Author
+
+**Shefali Kaushal**
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/shefalikaushal/)
+- 🌐 [Portfolio](https://shefali-kaushal-portfolio.netlify.app/)
+
+
