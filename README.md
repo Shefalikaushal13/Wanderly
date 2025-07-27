@@ -61,7 +61,10 @@
 
 ---
 
-## 📸 Screenshots and Demo Video
+## 🌐 Screenshots and Demo
+
+- **Live App:** [Visit Wanderly](https://wanderly-itinerary-generator.vercel.app/)  
+  > ⚠️ *Note: The deployed site may not be fully functional due to expiration of certain paid features. (e.g., Firebase, Gemini AI, or Google Maps quotas). For a complete experience, do check out the demo video in the screenshots and demo video section above.*
 
 https://github.com/user-attachments/assets/27732321-9070-4d9f-be9e-d2cbfbef80a3
 
@@ -78,21 +81,15 @@ https://github.com/user-attachments/assets/27732321-9070-4d9f-be9e-d2cbfbef80a3
 ![Screenshot 2024-11-26 222114](https://github.com/user-attachments/assets/d19d9b3b-a7c0-43ed-8be1-32e80fb431c1)
 
 
-
----
-
-## 🌐 Demo
-
-- **Live App:** [Visit Wanderly](https://wanderly-itinerary-generator.vercel.app/)  
-  > ⚠️ *Note: The deployed site may not be fully functional due to expiration of certain paid features. (e.g., Firebase, Gemini AI, or Google Maps quotas). For a complete experience, do check out the demo video in the screenshots and demo video section above.*
-
 ---
 
 ## ✍️ Author
 
-**Shefali Kaushal**
+**Shefali Kaushal**   
+🔗 [LinkedIn](https://www.linkedin.com/in/shefalikaushal13) 
+🌐 [Portfolio](https://shefali-kaushal-portfolio.netlify.app/)
+💻 [Peerlist](https://peerlist.io/shefalikaushal)
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/shefalikaushal/)
-- 🌐 [Portfolio](https://shefali-kaushal-portfolio.netlify.app/)
+---
 
 
